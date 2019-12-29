@@ -7,23 +7,22 @@ using UnityEngine.Experimental.PlayerLoop;
 public class Sword : MonoBehaviour
 {
     
-    /**
-     * ROTATION PARAMETERS
-     */
+    [Header("Sword Prefabs")]
+    public GameObject swordObject;
+    public GameObject swordTip;
+    public GameObject swordEnd;
+    
+    [Header("Rotation Parameters")]
     public bool m_rotate = true;
     public float rotateSpeed = 10f;
     public bool isClockWise = true;
     private float rotationZ = 175f;
 
-    /**
-     * STABING PARAMETERS
-     */
-    // Sword has to be 0,0,0 position and place upsideDown
-    public GameObject swordObject;
+    [Header("Stabbing Parameters")]
     public float stabTime = 2f;
     public float stabSize = 1f;
 
-
+    public int mealCount;
     public GameObject[] mealPoints;
     private int mealFound = 0;
     public float stabMealTime = 1f;
@@ -31,9 +30,28 @@ public class Sword : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private void Start()
     {
-
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        
+        GetMealPoints();
         StartCoroutine(RotatePlayer());
+    }
+
+    private void GetMealPoints()
+    {
+        mealPoints = new GameObject[mealCount];
+        Vector3 firstPoint = swordEnd.transform.position;
+        Vector3 lastPoint = swordTip.transform.position;
+        
+        for (int i = 0; i < mealCount; i++)
+        {
+            Vector3 thePoint = firstPoint + i * ((lastPoint-firstPoint)/(mealCount-1));
+            
+            GameObject pointObj = new GameObject();
+            pointObj.name = (i + 1).ToString() + ".Point";
+            pointObj.transform.position = thePoint;
+            pointObj.transform.parent = swordObject.transform;
+            mealPoints[i] = pointObj;
+        }
     }
 
     private void Update()

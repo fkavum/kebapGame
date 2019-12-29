@@ -30,7 +30,6 @@
           <e p="Sword.cs" t="Include" />
           <e p="SwordTip.cs" t="Include" />
         </e>
-        <e p="Sword.cs" t="Include" />
       </e>
       <e p="kebap.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
