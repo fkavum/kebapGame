@@ -6,7 +6,27 @@
     <e p="D:\ProjeDosyalari\Unity\kebap" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Sword.cs" t="Include" />
+        <e p="Low Poly Fruits" t="Include">
+          <e p="resources" t="Include">
+            <e p="fruits_tester.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Fruit.cs" t="Include" />
+          <e p="FruitArea.cs" t="Include" />
+          <e p="RectXformMover.cs" t="Include" />
+          <e p="ScreenFader.cs" t="Include" />
+          <e p="Singletons" t="Include">
+            <e p="GameManager.cs" t="Include" />
+            <e p="InputManager.cs" t="Include" />
+            <e p="LevelManager.cs" t="Include" />
+            <e p="ScoreManager.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+            <e p="SoundManager.cs" t="Include" />
+          </e>
+          <e p="Sword.cs" t="Include" />
+          <e p="SwordTip.cs" t="Include" />
+        </e>
       </e>
       <e p="kebap.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
