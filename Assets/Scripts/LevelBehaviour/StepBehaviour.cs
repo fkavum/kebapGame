@@ -15,7 +15,9 @@ namespace Infated.Tools
     {
         public string StepName;
         
-        [Reorderable(null, "Action", null)]
-        public StepActionList stepAction;
+        [Reorderable(null, "Fruit Action", null)]
+        public StepActionList stepActionForFruit;
+        [Reorderable(null, "Sword Action", null)]
+        public StepActionList stepActionForSword;
     }
 }

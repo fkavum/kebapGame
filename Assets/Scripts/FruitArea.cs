@@ -12,6 +12,8 @@ public class FruitArea : MonoBehaviour
     public float rotateSpeed = 10f;
     public bool isClockWise = true;
     private float rotationZ = 175f;
+
+    public int fruitCount;
     
     
     // Start is called before the first frame update

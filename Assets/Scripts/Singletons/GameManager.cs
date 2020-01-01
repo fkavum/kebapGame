@@ -10,7 +10,7 @@ public class GameManager : Singleton<GameManager>
 
     public int bestScore;
     public int gold;
-
+    public GameObject selectedSwordPrefab;
     public override void Awake()
     {
         base.Awake();
