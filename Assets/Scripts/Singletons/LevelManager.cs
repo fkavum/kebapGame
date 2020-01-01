@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : Singleton<LevelManager>
@@ -8,14 +9,23 @@ public class LevelManager : Singleton<LevelManager>
 	bool m_isReadyToBegin = false;
 	bool m_isGameOver = false;
     bool m_isReadyToReload = false;
+    
+    
+    private int currentHealth;
 
+
+    [Header("Should fill in the inspector")]
+    public int levelTotalStep;
+    public int levelCurrentStep;
+    public LevelCanvas LevelCanvas;
+    public int initialHealth;
+    
    public override void Awake()
     {
         base.Awake();
     }
 	void Start () 
 	{
-        // start the main game loop
 		StartCoroutine ("ExecuteGameLoop");
 	}
 
@@ -26,17 +36,12 @@ public class LevelManager : Singleton<LevelManager>
 		yield return StartCoroutine ("EndGameRoutine");
 	}
 
-    // switches ready to begin status to true
-    public void BeginGame()
-    {
-        m_isReadyToBegin = true;
-
-    }
-
     // coroutine for the level introduction
 	IEnumerator StartGameRoutine()
 	{
-        // wait until the player is ready
+		currentHealth = initialHealth;
+		LevelCanvas.UpdateHealth(currentHealth);
+		
 		while (!m_isReadyToBegin) 
 		{
 			yield return null;
@@ -65,5 +70,17 @@ public class LevelManager : Singleton<LevelManager>
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		
 	}
+	
+	public void decreaseHealth()
+	{
+		currentHealth -= 1;
+		LevelCanvas.UpdateHealth(currentHealth);
+
+		if (currentHealth <= 0)
+		{
+			m_isGameOver = true;
+		}
+		
+	}    
 
 }

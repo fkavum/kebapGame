@@ -4,7 +4,10 @@
     <list default="true" id="691ca0d2-9e9a-4cdb-9cd1-ff890627cf6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/mvpGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mvpGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sword.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +23,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Low Poly Fruits/resources/fruits_tester.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/mvpGame.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -31,10 +39,19 @@
         <option value="$PROJECT_DIR$/Assets/SwordTip.cs" />
         <option value="$PROJECT_DIR$/Assets/Fruit.cs" />
         <option value="$PROJECT_DIR$/Assets/FruitArea.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sword.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StepBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/AIBrain.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/AIState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepAction.cs" />
       </list>
     </option>
   </component>
@@ -94,7 +111,10 @@
       <workItem from="1577378189147" duration="208000" />
       <workItem from="1577384369215" duration="1806000" />
       <workItem from="1577554562636" duration="2446000" />
-      <workItem from="1577615524205" duration="4244000" />
+      <workItem from="1577615524205" duration="6517000" />
+      <workItem from="1577648939375" duration="3576000" />
+      <workItem from="1577728149314" duration="3323000" />
+      <workItem from="1577802397640" duration="1590000" />
     </task>
     <servers />
   </component>
@@ -108,5 +128,9 @@
       <screen x="-1440" y="78" width="1440" height="860" />
     </state>
     <state x="-1064" y="234" key="run.anything.popup/0.0.1920.1040/-1440.78.1440.860@-1440.78.1440.860" timestamp="1577631777186" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577649585907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577649585907" />
   </component>
 </project>

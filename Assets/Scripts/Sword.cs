@@ -58,20 +58,26 @@ public class Sword : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            FindCollectibles();
+            AnimateSword();
+            if (!FindCollectibles())
+            {
+                LevelManager.Instance.decreaseHealth();
+            }
         }
 
     }
     
-    private void FindCollectibles()
+    private bool FindCollectibles()
     {
         Debug.DrawRay(transform.position,transform.right*10f,Color.green);
         RaycastHit hit;
         if (Physics.Raycast(transform.position,  transform.up,out hit,10f,1<<LayerMask.NameToLayer("RayCast")))
         {
-            AnimateSword();
             MoveObject(hit);
+            return true;
         }
+
+        return false;
     }
 
     void MoveObject(RaycastHit hit)
