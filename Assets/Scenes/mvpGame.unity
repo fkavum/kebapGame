@@ -273,6 +273,54 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 684895617}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &684895622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 283346008557060680, guid: d22837ff55925ef4a9dc0f21576f0e04,
+    type: 3}
+  m_PrefabInstance: {fileID: 684895617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &684895623 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 283346009536971579, guid: d22837ff55925ef4a9dc0f21576f0e04,
+    type: 3}
+  m_PrefabInstance: {fileID: 684895617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &684895624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 283346009649422702, guid: d22837ff55925ef4a9dc0f21576f0e04,
+    type: 3}
+  m_PrefabInstance: {fileID: 684895617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &684895625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 283346009255056345, guid: d22837ff55925ef4a9dc0f21576f0e04,
+    type: 3}
+  m_PrefabInstance: {fileID: 684895617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &730454432
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +425,20 @@ MonoBehaviour:
         - stepTime: 10
           isClockWise: 1
           rotationSpeed: 10
+      stepActionForSword:
+        array:
+        - stepTime: 10
+          isClockWise: 0
+          rotationSpeed: 50
+    - StepName: 
+      stepActionForFruit:
+        array:
+        - stepTime: 1
+          isClockWise: 1
+          rotationSpeed: 10
+        - stepTime: 3
+          isClockWise: 1
+          rotationSpeed: 100
       stepActionForSword:
         array:
         - stepTime: 10
@@ -585,9 +647,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf20119ea4179d4a80e2e94307ce1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelProgressSlider: {fileID: 0}
-  curentScoreText: {fileID: 0}
-  currentGoldText: {fileID: 0}
+  levelProgressSlider: {fileID: 684895624}
+  curentScoreText: {fileID: 684895623}
+  currentGoldText: {fileID: 684895622}
+  currentLevelText: {fileID: 684895625}
   healthObjs:
   - {fileID: 684895621}
   - {fileID: 684895620}

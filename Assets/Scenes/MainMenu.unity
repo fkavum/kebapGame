@@ -949,6 +949,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469205358}
   m_CullTransparentMesh: 0
+--- !u!114 &527927872 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 283346008557060680, guid: d22837ff55925ef4a9dc0f21576f0e04,
+    type: 3}
+  m_PrefabInstance: {fileID: 283346009905220211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &559796771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1084,7 @@ MonoBehaviour:
   gold: 0
   selectedSwordPrefab: {fileID: 3939764464010746168, guid: 28895824a604d25498ace12cc1455209,
     type: 3}
+  currentLevel: 0
 --- !u!114 &573786548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,6 +1380,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customizePanel: {fileID: 6222899}
+  bestScoreText: {fileID: 1622246988}
+  currentGoldText: {fileID: 527927872}
+  currentLevelText: {fileID: 1619383746}
 --- !u!1 &1062884168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,6 +1797,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500035826}
   m_CullTransparentMesh: 0
+--- !u!114 &1619383746 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 283346009255056345, guid: d22837ff55925ef4a9dc0f21576f0e04,
+    type: 3}
+  m_PrefabInstance: {fileID: 283346009905220211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1622246988 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 283346009536971579, guid: d22837ff55925ef4a9dc0f21576f0e04,
+    type: 3}
+  m_PrefabInstance: {fileID: 283346009905220211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1667874114
 GameObject:
   m_ObjectHideFlags: 0

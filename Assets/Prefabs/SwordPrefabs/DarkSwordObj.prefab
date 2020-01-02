@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 15, z: 0}
   onscreenPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 15, z: 0}
+  endPosition: {x: 0, y: -15, z: 0}
   timeToMove: 1
 --- !u!1 &843292661873219229
 GameObject:

@@ -8,6 +8,7 @@ public class LevelCanvas : MonoBehaviour
     public Slider levelProgressSlider;
     public Text curentScoreText;
     public Text currentGoldText;
+    public Text currentLevelText;
     public GameObject[] healthObjs;
 
     public void UpdateHealth(int heartCount)

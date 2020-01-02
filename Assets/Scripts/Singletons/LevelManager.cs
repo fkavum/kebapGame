@@ -67,8 +67,16 @@ public class LevelManager : Singleton<LevelManager>
         LevelCanvas.UpdateHealth(m_currentHealth);
         m_currentStep = 0;
         initTheStep();
-
+        InitUIElements();
     }
+
+    private void InitUIElements()
+    {
+        LevelCanvas.curentScoreText.text = "0";
+        LevelCanvas.currentGoldText.text = GameManager.Instance.gold.ToString();
+        LevelCanvas.currentLevelText.text = "Level " + GameManager.Instance.currentLevel.ToString();
+    }
+
 
     private void InitFruits(int step)
     {
@@ -87,6 +95,9 @@ public class LevelManager : Singleton<LevelManager>
 
     private void initTheStep()
     {
+
+        StartCoroutine(ChangeStepSliderValueCoroutine((float) m_currentStep / (float) m_stepCount, 1f));
+        
         InputManager.Instance.touchAvaible = false;
         if (m_currentStep == m_stepCount)
         {
@@ -110,7 +121,8 @@ public class LevelManager : Singleton<LevelManager>
         m_levelBehaviour.StartCoroutines(m_currentStep, m_sword, m_fruitArea);
     }
 
-
+    
+    
     // coroutine for game play
     IEnumerator PlayGameRoutine()
     {
@@ -160,5 +172,49 @@ public class LevelManager : Singleton<LevelManager>
 
             initTheStep();
         }
+    }
+    
+    
+    // coroutine for movement; this is generic, just pass in a start position, end position and time to move
+    IEnumerator ChangeStepSliderValueCoroutine(float endValue,float slideTime)
+    {
+
+        float firstValue = LevelCanvas.levelProgressSlider.value;
+
+        // we have not reached our destination
+        bool reachedDestination = false;
+
+        // reset the amount of time that has passed
+        float elapsedTime = 0f;
+
+        // while we have not reached the destination...
+        while (!reachedDestination) 
+        {
+            // ... check to see if we are close to the target position
+            if (Mathf.Abs(LevelCanvas.levelProgressSlider.value - endValue ) < 0.01f)
+            {
+                reachedDestination = true;
+                break;
+            }
+            // increment our elapsed time by the time for this frame
+            elapsedTime += Time.deltaTime;
+
+            // calculate the interpolation parameter
+            float t = Mathf.Clamp (elapsedTime / slideTime, 0f, 1f);
+            t = t * t * t * (t * (t * 6 - 15) + 10);
+
+            // linearly interpolate from the start to the end position
+            if (LevelCanvas.levelProgressSlider != null)
+            {
+                LevelCanvas.levelProgressSlider.value = Mathf.Lerp (firstValue, endValue, t);
+              
+            }
+
+            // wait one frame
+            yield return null;
+
+        }
+        LevelCanvas.levelProgressSlider.value = endValue; 
+	
     }
 }
