@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3939764464010746170}
   - component: {fileID: 3939764464010746172}
   - component: {fileID: 3939764464010746173}
+  - component: {fileID: 5430940557625929315}
   m_Layer: 0
   m_Name: SwordObj
   m_TagString: Untagged
@@ -55,7 +56,6 @@ MonoBehaviour:
   isClockWise: 1
   stabTime: 0.3
   stabSize: 1
-  mealCount: 4
   mealPoints: []
   stabMealTime: 0.3
 --- !u!65 &3939764464010746172
@@ -87,6 +87,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5430940557625929315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939764464010746168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f21db67081e706499bc4c49b6427cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {x: 0, y: 15, z: 0}
+  onscreenPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: -15, z: 0}
+  timeToMove: 1
 --- !u!1 &3939764465275319876
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +251,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3939764465775379492}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.07, z: 1}

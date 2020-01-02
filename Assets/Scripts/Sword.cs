@@ -22,7 +22,6 @@ public class Sword : MonoBehaviour
     public float stabTime = 2f;
     public float stabSize = 1f;
 
-    public int mealCount;
     public GameObject[] mealPoints;
     private int mealFound = 0;
     public float stabMealTime = 1f;
@@ -31,12 +30,10 @@ public class Sword : MonoBehaviour
     private void Start()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
-        
-        GetMealPoints();
         StartCoroutine(RotatePlayer());
     }
 
-    private void GetMealPoints()
+    public void SetMealPoints(int mealCount)
     {
         mealPoints = new GameObject[mealCount];
         Vector3 firstPoint = swordEnd.transform.position;
@@ -56,22 +53,33 @@ public class Sword : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (InputManager.Instance.isTouchedForStab)
         {
-            FindCollectibles();
+            
+            AnimateSword();
+            if (!FindCollectibles())
+            {
+                LevelManager.Instance.decreaseHealth();
+            }
+            else
+            {
+                LevelManager.Instance.fruitCollected();
+            }
         }
 
     }
     
-    private void FindCollectibles()
+    private bool FindCollectibles()
     {
         Debug.DrawRay(transform.position,transform.right*10f,Color.green);
         RaycastHit hit;
-        if (Physics.Raycast(transform.position,  transform.up,out hit,10f,1<<LayerMask.NameToLayer("RayCast")))
+        if (Physics.Raycast(transform.position,  transform.up,out hit,12f,1<<LayerMask.NameToLayer("RayCast")))
         {
-            AnimateSword();
             MoveObject(hit);
+            return true;
         }
+
+        return false;
     }
 
     void MoveObject(RaycastHit hit)
@@ -109,6 +117,8 @@ public class Sword : MonoBehaviour
 
     IEnumerator AnimateSwordCoroutine()
     {
+        InputManager.Instance.touchAvaible = false;
+        
         Vector3 startPosition = swordObject.transform.localPosition;
         Vector3 stabPosition = new Vector3(swordObject.transform.localPosition.x,
             swordObject.transform.localPosition.y + stabSize, swordObject.transform.localPosition.z);
@@ -135,6 +145,8 @@ public class Sword : MonoBehaviour
         }
 
         swordObject.transform.localPosition = startPosition;
+        
+        InputManager.Instance.touchAvaible = true;
     }
 
     IEnumerator RotatePlayer()
