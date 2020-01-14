@@ -11,6 +11,7 @@ public class GameManager : Singleton<GameManager>
 
     public int bestScore;
     public int gold;
+    public int currentScore;
     public GameObject selectedSwordPrefab;
     public int currentLevel;
     
@@ -23,6 +24,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
+        currentScore = 0;
         currentLevel = 1;
         bestScore = 66;
         gold = 15;

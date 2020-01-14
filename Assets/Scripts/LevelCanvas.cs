@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class LevelCanvas : MonoBehaviour
 {
-    public Slider levelProgressSlider;
+    public LevelProgress levelProgressBar;
     public Text curentScoreText;
     public Text currentGoldText;
     public Text currentLevelText;
     public GameObject[] healthObjs;
-
+    public RectXformMover BossLevelPanel;
     public void UpdateHealth(int heartCount)
     {
         for (int i = 0; i < healthObjs.Length; i++)
@@ -25,6 +25,6 @@ public class LevelCanvas : MonoBehaviour
             }
         }
     }
-    
-    
+
+
 }

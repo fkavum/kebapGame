@@ -19,7 +19,6 @@ public class LevelManager : Singleton<LevelManager>
 
     public int initialHealth;
 
-
     private Sword m_sword;
     private FruitArea m_fruitArea;
     private int m_currentHealth;
@@ -72,15 +71,15 @@ public class LevelManager : Singleton<LevelManager>
 
     private void InitUIElements()
     {
-        LevelCanvas.curentScoreText.text = "0";
+        LevelCanvas.curentScoreText.text = GameManager.Instance.currentScore.ToString();
         LevelCanvas.currentGoldText.text = GameManager.Instance.gold.ToString();
         LevelCanvas.currentLevelText.text = "Level " + GameManager.Instance.currentLevel.ToString();
     }
 
 
-    private void InitFruits(int step)
+    private void InitFruits(int step, bool isBossStep)
     {
-        m_fruitArea = m_levelBehaviour.InitFruit(step);
+        m_fruitArea = m_levelBehaviour.InitFruit(step,isBossStep);
         m_fruitToCollect = m_fruitArea.fruitCount;
         m_currentCollectedFruit = 0;
     }
@@ -95,15 +94,22 @@ public class LevelManager : Singleton<LevelManager>
 
     private void initTheStep()
     {
-
-        StartCoroutine(ChangeStepSliderValueCoroutine((float) m_currentStep / (float) m_stepCount, 1f));
+        bool isBossStep = false;
+        LevelCanvas.levelProgressBar.ChangeLevelProgressValue((float) m_currentStep / (float) m_stepCount, 1f);
         
         InputManager.Instance.touchAvaible = false;
         if (m_currentStep == m_stepCount)
         {
             m_isGameOver = true;
             m_isWinner = true;
+            //Todo: Score manager needed.
+            GameManager.Instance.gold += 5;
             return;
+        }
+
+        if (m_currentStep + 1 == m_stepCount)
+        {
+            isBossStep = true;
         }
 
         if (m_sword != null)
@@ -116,12 +122,24 @@ public class LevelManager : Singleton<LevelManager>
             m_fruitArea.gameObject.GetComponent<GameobjectMover>().MoveOff(false,true);
         }
 
-        InitFruits(m_currentStep);
-        InitSword();
-        m_levelBehaviour.StartCoroutines(m_currentStep, m_sword, m_fruitArea);
+        StartCoroutine(InitTheStepCoroutine(isBossStep));
     }
 
-    
+    IEnumerator InitTheStepCoroutine(bool isBossStep)
+    {
+        if (isBossStep)
+        {
+            LevelCanvas.BossLevelPanel.gameObject.SetActive(true);
+            LevelCanvas.BossLevelPanel.MoveOn();
+            yield return new WaitForSeconds(1f);
+            LevelCanvas.BossLevelPanel.MoveOff();
+        }
+        
+        InitFruits(m_currentStep,isBossStep);
+        InitSword();
+        m_levelBehaviour.StartCoroutines(m_currentStep, m_sword, m_fruitArea);
+        yield return null;
+    }
     
     // coroutine for game play
     IEnumerator PlayGameRoutine()
@@ -139,7 +157,7 @@ public class LevelManager : Singleton<LevelManager>
 
         if (m_isWinner)
         {
-            Debug.Log("You win the game!");
+            StartCoroutine(GoNextLevel());
         }
 
         // wait until read to reload
@@ -147,8 +165,18 @@ public class LevelManager : Singleton<LevelManager>
         {
             yield return null;
         }
-
+        if(!m_isWinner)
         SceneManager.LoadScene("MainMenu");
+    }
+
+
+    IEnumerator GoNextLevel()
+    {
+        GameManager.Instance.currentLevel++;
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Level"+GameManager.Instance.currentLevel.ToString());
+        yield return null;
     }
 
     public void decreaseHealth()
@@ -166,6 +194,10 @@ public class LevelManager : Singleton<LevelManager>
     {
         m_currentCollectedFruit += 1;
 
+        //TODO: Score manager needed.
+        GameManager.Instance.currentScore++;
+        LevelCanvas.curentScoreText.text = GameManager.Instance.currentScore.ToString();
+        
         if (m_fruitToCollect <= m_currentCollectedFruit)
         {
             m_currentStep += 1;
@@ -175,46 +207,5 @@ public class LevelManager : Singleton<LevelManager>
     }
     
     
-    // coroutine for movement; this is generic, just pass in a start position, end position and time to move
-    IEnumerator ChangeStepSliderValueCoroutine(float endValue,float slideTime)
-    {
-
-        float firstValue = LevelCanvas.levelProgressSlider.value;
-
-        // we have not reached our destination
-        bool reachedDestination = false;
-
-        // reset the amount of time that has passed
-        float elapsedTime = 0f;
-
-        // while we have not reached the destination...
-        while (!reachedDestination) 
-        {
-            // ... check to see if we are close to the target position
-            if (Mathf.Abs(LevelCanvas.levelProgressSlider.value - endValue ) < 0.01f)
-            {
-                reachedDestination = true;
-                break;
-            }
-            // increment our elapsed time by the time for this frame
-            elapsedTime += Time.deltaTime;
-
-            // calculate the interpolation parameter
-            float t = Mathf.Clamp (elapsedTime / slideTime, 0f, 1f);
-            t = t * t * t * (t * (t * 6 - 15) + 10);
-
-            // linearly interpolate from the start to the end position
-            if (LevelCanvas.levelProgressSlider != null)
-            {
-                LevelCanvas.levelProgressSlider.value = Mathf.Lerp (firstValue, endValue, t);
-              
-            }
-
-            // wait one frame
-            yield return null;
-
-        }
-        LevelCanvas.levelProgressSlider.value = endValue; 
-	
-    }
+  
 }
