@@ -14,4 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/mvpGame.unity
     guid: 6d264287d0214a640a80246dac7a4427
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 709f5d9f700f6334db3a9f026f41d8ee
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: c8942141fd21e4245a92c94105bd0891
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: ea20d777a19449e44bc1540bbe773485
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: a8ccc2b535a970342a38178a71f9d9fd
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: a4fde7281d1af3e439090627473dcda1
   m_configObjects: {}

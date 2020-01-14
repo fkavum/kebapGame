@@ -26,12 +26,22 @@ namespace Infated.Tools
         public StepBehaviourList stepList;
 
 
-        public FruitArea InitFruit(int step)
+        public FruitArea InitFruit(int step,bool isBossStep)
         {
+            if(!isBossStep){
             int randomInt = Random.Range(0, levelFruitPrefabs.Length);
             GameObject fruitObj = Instantiate(levelFruitPrefabs[randomInt], Vector3.zero, Quaternion.identity);
             fruitObj.GetComponent<GameobjectMover>().MoveOn();
             return fruitObj.GetComponent<FruitArea>();
+            
+            }
+            else
+            {
+                int randomInt = Random.Range(0, bossFruitPrefabs.Length);
+                GameObject fruitObj = Instantiate(bossFruitPrefabs[randomInt], Vector3.zero, Quaternion.identity);
+                fruitObj.GetComponent<GameobjectMover>().MoveOn();
+                return fruitObj.GetComponent<FruitArea>();
+            }
         }
 
         public void StartCoroutines(int step,Sword sword,FruitArea fruit)

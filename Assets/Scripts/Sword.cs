@@ -11,6 +11,7 @@ public class Sword : MonoBehaviour
     public GameObject swordObject;
     public GameObject swordTip;
     public GameObject swordEnd;
+    public GameObject swordFailPrefab;
     
     [Header("Rotation Parameters")]
     public bool m_rotate = true;
@@ -55,14 +56,16 @@ public class Sword : MonoBehaviour
     {
         if (InputManager.Instance.isTouchedForStab)
         {
-            
-            AnimateSword();
+            swordTip.gameObject.SetActive(false);
             if (!FindCollectibles())
             {
+                AnimateSword(true);
                 LevelManager.Instance.decreaseHealth();
             }
             else
             {
+                AnimateSword();
+                swordTip.gameObject.SetActive(true);
                 LevelManager.Instance.fruitCollected();
             }
         }
@@ -110,15 +113,16 @@ public class Sword : MonoBehaviour
         yield return null;
     }
 
-    private void AnimateSword()
+    private void AnimateSword(bool withFail = false)
     {
-        StartCoroutine(AnimateSwordCoroutine());
+        StartCoroutine(AnimateSwordCoroutine(withFail));
     }
 
-    IEnumerator AnimateSwordCoroutine()
+    IEnumerator AnimateSwordCoroutine(bool withFail = false)
     {
         InputManager.Instance.touchAvaible = false;
-        
+        if(withFail){
+        swordFailPrefab.SetActive(true);}
         Vector3 startPosition = swordObject.transform.localPosition;
         Vector3 stabPosition = new Vector3(swordObject.transform.localPosition.x,
             swordObject.transform.localPosition.y + stabSize, swordObject.transform.localPosition.z);
@@ -145,7 +149,7 @@ public class Sword : MonoBehaviour
         }
 
         swordObject.transform.localPosition = startPosition;
-        
+        swordFailPrefab.SetActive(false);
         InputManager.Instance.touchAvaible = true;
     }
 
