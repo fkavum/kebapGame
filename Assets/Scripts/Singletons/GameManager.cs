@@ -25,8 +25,52 @@ public class GameManager : Singleton<GameManager>
     private void Start()
     {
         currentScore = 0;
-        currentLevel = 1;
-        bestScore = 66;
-        gold = 15;
+        if (PlayerPrefs.HasKey("BestScore"))
+        {
+            bestScore = PlayerPrefs.GetInt("BestScore");
+        }
+        else
+        {
+            bestScore = 0;
+        }
+        if (PlayerPrefs.HasKey("Level"))
+        {
+            currentLevel = PlayerPrefs.GetInt("Level");
+        }
+        else
+        {
+            currentLevel = 1;
+        }
+        if (PlayerPrefs.HasKey("Gold"))
+        {
+            gold = PlayerPrefs.GetInt("Gold");
+        }
+        else
+        {
+            gold = 15;
+        }
     }
+
+    public void GoNextLevel()
+    {
+        currentLevel++;
+        PlayerPrefs.SetInt("Level",currentLevel);
+        SceneManager.LoadScene("Level"+GameManager.Instance.currentLevel.ToString());
+    }
+
+    public void AddGold(int goldValue)
+    {
+        gold += goldValue;
+        PlayerPrefs.SetInt("Gold",gold);        
+    }
+
+    public void UpdateBestScore()
+    {
+        if (currentScore > bestScore)
+        {
+            bestScore = currentScore;
+            PlayerPrefs.SetInt("BestScore",bestScore);
+        }
+    }
+    
 }

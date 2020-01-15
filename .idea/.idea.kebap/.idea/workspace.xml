@@ -2,24 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="691ca0d2-9e9a-4cdb-9cd1-ff890627cf6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/93.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/93.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizeButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizeButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizePanel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizePanel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/StartButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/StartButton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/coin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/coin.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/heart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/load.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/load.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/misic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/misic.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/music_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/music_off.png.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CustomizePanel.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CustomizePanel.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Menu.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/close_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/close_2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Unity_PdejtvFlKY.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Unity_PdejtvFlKY.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Unity_ZiPFrjQoCX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Unity_ZiPFrjQoCX.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/93.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/93.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/93.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/93.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizeButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/CustomizeButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizeButton.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/CustomizeButton.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizePanel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/CustomizePanel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizePanel.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/CustomizePanel.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/StartButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/StartButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/StartButton.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/StartButton.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/coin.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/coin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/coin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/coin.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/heart.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/heart.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/load.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/load.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/load.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/load.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/misic.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/misic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/misic.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/misic.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/music_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/music_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/music_off.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Menu/music_off.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +65,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/mvpGame.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fruit.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -68,12 +86,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameobjectMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelProgress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sword.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +160,7 @@
       <workItem from="1577954056405" duration="6334000" />
       <workItem from="1578406266802" duration="843000" />
       <workItem from="1578946379568" duration="2016000" />
-      <workItem from="1578993907046" duration="3911000" />
+      <workItem from="1578993907046" duration="8341000" />
     </task>
     <servers />
   </component>

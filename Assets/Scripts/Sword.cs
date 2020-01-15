@@ -61,12 +61,15 @@ public class Sword : MonoBehaviour
             {
                 AnimateSword(true);
                 LevelManager.Instance.decreaseHealth();
+                SoundManager.Instance.PlayLoseSound();
+                
             }
             else
             {
                 AnimateSword();
                 swordTip.gameObject.SetActive(true);
                 LevelManager.Instance.fruitCollected();
+                SoundManager.Instance.PlayWinSound();
             }
         }
 

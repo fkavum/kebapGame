@@ -29,12 +29,12 @@ public class SoundManager : Singleton<SoundManager>
     public float lowPitch = 0.95f;
     public float highPitch = 1.05f;
 
-    protected List<AudioSource> _loopingSounds;
+    private List<AudioSource> _loopingSounds;
     
 	void Start () 
     {
-        // play a random music clip
-        PlayRandomMusic();
+        _loopingSounds = new List<AudioSource>();
+
 	}
 	
     // this replaces the native PlayClipAtPoint to play an AudioClip at a world space position
@@ -81,7 +81,7 @@ public class SoundManager : Singleton<SoundManager>
     }
 
     // play a random sound from an array of sounds
-    public AudioSource PlayRandom(AudioClip[] clips, Vector3 position, float volume = 1f)
+    public AudioSource PlayRandom(AudioClip[] clips, Vector3 position, float volume = 1f,bool  randomizePitch = true,bool loop = false)
     {
         if (clips != null)
         {
@@ -91,7 +91,7 @@ public class SoundManager : Singleton<SoundManager>
 
                 if (clips[randomIndex] != null)
                 {
-                    AudioSource source = PlayClipAtPoint(clips[randomIndex], position, volume);
+                    AudioSource source = PlayClipAtPoint(clips[randomIndex], position, volume,randomizePitch,loop);
                     return source;
                 }
             }
@@ -102,7 +102,7 @@ public class SoundManager : Singleton<SoundManager>
     // play a random music clip
     public void PlayRandomMusic()
     {
-        PlayRandom(musicClips, Vector3.zero, musicVolume);
+        PlayRandom(musicClips, Vector3.zero, musicVolume,false,true);
     }
 
     // play a random win sound
@@ -135,5 +135,31 @@ public class SoundManager : Singleton<SoundManager>
         }
     }
 
+    public void NoSoundVolume()
+    {
+        foreach (AudioSource loopingSound in _loopingSounds)
+        {
+            if (loopingSound != null)
+            {
+                loopingSound.volume = 0f;
+            }
+        }
 
+        musicVolume = 0f;
+        fxVolume = 0f;
+    }
+
+    public void YesSoundVolume()
+    {
+        foreach (AudioSource loopingSound in _loopingSounds)
+        {
+            if (loopingSound != null)
+            {
+                loopingSound.volume = 1f;
+            }
+        }
+        musicVolume = 1f;
+        fxVolume = 1f;
+    }
+    
 }

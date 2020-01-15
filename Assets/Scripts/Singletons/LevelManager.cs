@@ -67,6 +67,8 @@ public class LevelManager : Singleton<LevelManager>
         m_currentStep = 0;
         initTheStep();
         InitUIElements();
+        SoundManager.Instance.StopLoopingSounds();
+        SoundManager.Instance.PlayRandomMusic();
     }
 
     private void InitUIElements()
@@ -103,7 +105,7 @@ public class LevelManager : Singleton<LevelManager>
             m_isGameOver = true;
             m_isWinner = true;
             //Todo: Score manager needed.
-            GameManager.Instance.gold += 5;
+            GameManager.Instance.AddGold(5);
             return;
         }
 
@@ -165,17 +167,22 @@ public class LevelManager : Singleton<LevelManager>
         {
             yield return null;
         }
-        if(!m_isWinner)
-        SceneManager.LoadScene("MainMenu");
+
+        if (!m_isWinner)
+        {
+            yield return new WaitForSeconds(0.5f);
+            GameManager.Instance.UpdateBestScore();
+            SceneManager.LoadScene("MainMenu");  
+        }
+    
     }
 
 
     IEnumerator GoNextLevel()
     {
-        GameManager.Instance.currentLevel++;
 
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Level"+GameManager.Instance.currentLevel.ToString());
+        GameManager.Instance.GoNextLevel();
         yield return null;
     }
 
