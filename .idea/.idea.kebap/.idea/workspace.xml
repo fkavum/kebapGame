@@ -2,35 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="691ca0d2-9e9a-4cdb-9cd1-ff890627cf6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FruitPrefabs/Boss101.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FruitPrefabs/Boss101.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FruitPrefabs/Fruits403.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FruitPrefabs/Fruits403.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwordPrefabs/DarkSwordObj.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SwordPrefabs/DarkSwordObj.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwordPrefabs/SwordObj.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SwordPrefabs/SwordObj.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TopPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TopPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sword.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/blueSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/blueSword.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/circle-png-transparent-circlepng-images-pluspng-circlepng-800_800.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/circle-png-transparent-circlepng-images-pluspng-circlepng-800_800.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/roundOrange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/roundOrange.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/roundPurple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/roundPurple.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/roundRed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/roundRed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/roundedSquare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/roundedSquare.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/whiteSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/whiteSword.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/93.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizeButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizeButton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizePanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CustomizePanel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/StartButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/StartButton.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/load.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/load.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/misic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/misic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/music_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/music_off.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +38,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LevelProgress.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Low Poly Fruits/resources/fruits_tester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RectXformMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" root0="FORCE_HIGHLIGHTING" />
@@ -153,7 +141,7 @@
       <workItem from="1577954056405" duration="6334000" />
       <workItem from="1578406266802" duration="843000" />
       <workItem from="1578946379568" duration="2016000" />
-      <workItem from="1578993907046" duration="3085000" />
+      <workItem from="1578993907046" duration="3911000" />
     </task>
     <servers />
   </component>
