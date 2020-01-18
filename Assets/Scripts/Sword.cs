@@ -61,12 +61,16 @@ public class Sword : MonoBehaviour
             {
                 AnimateSword(true);
                 LevelManager.Instance.decreaseHealth();
+                SoundManager.Instance.PlayLoseSound();
+                Camera.main.GetComponent<CameraShake>().shakeDuration = stabTime;
+
             }
             else
             {
                 AnimateSword();
                 swordTip.gameObject.SetActive(true);
                 LevelManager.Instance.fruitCollected();
+                SoundManager.Instance.PlayWinSound();
             }
         }
 
@@ -89,6 +93,7 @@ public class Sword : MonoBehaviour
     {
         GameObject obj = hit.collider.gameObject;
         obj.transform.parent = mealPoints[mealFound].transform;
+        obj.GetComponent<Fruit>().PlayStabParticleEffect();
         obj.layer = 1 << 0;
         mealFound++;
         StartCoroutine(MoveOrigin(obj));

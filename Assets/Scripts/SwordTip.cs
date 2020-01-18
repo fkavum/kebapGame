@@ -8,9 +8,9 @@ public class SwordTip : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Fruit")
+       /* if (other.tag == "Fruit")
         {
             other.gameObject.GetComponent<Fruit>().PlayStabParticleEffect();
-        }
+        }*/
     }
 }

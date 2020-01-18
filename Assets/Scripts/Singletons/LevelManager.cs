@@ -26,6 +26,11 @@ public class LevelManager : Singleton<LevelManager>
     private int m_stepCount;
     private int m_currentStep;
 
+    public bool IsGameOver
+    {
+        get => m_isGameOver;
+        set => m_isGameOver = value;
+    }
 
     private int m_currentCollectedFruit;
     private int m_fruitToCollect;
@@ -40,6 +45,9 @@ public class LevelManager : Singleton<LevelManager>
         m_levelBehaviour = gameObject.GetComponent<LevelBehaviour>();
         m_stepCount = m_levelBehaviour.stepList.Count;
         StartCoroutine("ExecuteGameLoop");
+
+        Camera.main.gameObject.AddComponent<CameraShake>();
+        Camera.main.gameObject.GetComponent<CameraShake>().shakeAmount = 0.08f;
     }
 
     IEnumerator ExecuteGameLoop()
@@ -67,6 +75,8 @@ public class LevelManager : Singleton<LevelManager>
         m_currentStep = 0;
         initTheStep();
         InitUIElements();
+        SoundManager.Instance.StopLoopingSounds();
+        SoundManager.Instance.PlayRandomMusic();
     }
 
     private void InitUIElements()
@@ -103,7 +113,7 @@ public class LevelManager : Singleton<LevelManager>
             m_isGameOver = true;
             m_isWinner = true;
             //Todo: Score manager needed.
-            GameManager.Instance.gold += 5;
+            GameManager.Instance.AddGold(5);
             return;
         }
 
@@ -165,17 +175,22 @@ public class LevelManager : Singleton<LevelManager>
         {
             yield return null;
         }
-        if(!m_isWinner)
-        SceneManager.LoadScene("MainMenu");
+
+        if (!m_isWinner)
+        {
+            yield return new WaitForSeconds(0.5f);
+            GameManager.Instance.UpdateBestScore();
+            SceneManager.LoadScene("MainMenu");  
+        }
+    
     }
 
 
     IEnumerator GoNextLevel()
     {
-        GameManager.Instance.currentLevel++;
 
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Level"+GameManager.Instance.currentLevel.ToString());
+        GameManager.Instance.GoNextLevel();
         yield return null;
     }
 

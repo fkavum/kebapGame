@@ -7,17 +7,34 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CameraShake.cs" t="Include" />
         <e p="CustomizePanel.cs" t="Include" />
-        <e p="LevelProgress.cs" t="Include" />
-        <e p="Low Poly Fruits" t="Include">
-          <e p="resources" t="Include">
-            <e p="fruits_tester.cs" t="Include" />
+        <e p="ExternalModels" t="Include">
+          <e p="Sword" t="Include">
+            <e p="MS_WeaponVol01" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+            <e p="Seven Swords" t="Include">
+              <e p="Swords" t="Include">
+                <e p="Shader" t="Include">
+                  <e p="ToonSwords.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Vegity" t="Include">
+            <e p="Low Poly Fruits" t="Include">
+              <e p="resources" t="Include">
+                <e p="fruits_tester.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Low_Poly_Pixel3D_Meats_Seafood_Asset_Pack_Devils_Garage_V01" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
           </e>
         </e>
+        <e p="LevelProgress.cs" t="Include" />
         <e p="MainMenuThings.cs" t="Include" />
-        <e p="MS_WeaponVol01" t="Include">
-          <e p="ReadMe.txt" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
           <e p="Background" t="Include">
             <e p="Sky.cs" t="Include" />
