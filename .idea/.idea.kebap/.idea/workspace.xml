@@ -1,23 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="691ca0d2-9e9a-4cdb-9cd1-ff890627cf6f" name="Default Changelist" comment="" />
+    <list default="true" id="691ca0d2-9e9a-4cdb-9cd1-ff890627cf6f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomizePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CustomizePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/Materials/No Name.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/Materials/No Name.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/Orange.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/Orange.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/OrangeLeaf.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/OrangeLeaf.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/OrangeSlice.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/OrangeSlice.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/appleGreen.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/appleGreen.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/appleRed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/appleRed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/avacado.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/avacado.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/avadadoMash.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/avadadoMash.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/banana.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/banana.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/broccoli.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/broccoli.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/cabbage.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/cabbage.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/carrot.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/carrot.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/cherry.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/cherry.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/chilly.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/chilly.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/cucumber.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/cucumber.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/eggPlant.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/eggPlant.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/kiwi.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/kiwi.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/lemon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/lemon.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/lemonGreen.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/lemonGreen.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/mango.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/mango.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/mushroom01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/mushroom01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/mushroom02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/mushroom02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/onionRed.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/onionRed.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/onionWhite.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/onionWhite.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/onionYellow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/onionYellow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/pear.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/pear.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/pineapple.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/pineapple.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/pineapplePiece.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/pineapplePiece.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/pumpkin.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/pumpkin.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/raddish.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/raddish.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/raddishPink.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/raddishPink.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/strawberry.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/strawberry.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/tomato.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/tomato.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/watermelon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/watermelon.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/watermelonSlice.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Mesh/FBX_Legacy_Size/watermelonSlice.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Texture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Texture/propsFood_base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Texture/propsFood_base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Texture/propsFood_base_color.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Texture/propsFood_base_color.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Texture/propsFood_base_color.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/FruitVeggiesDevilSHop/Texture/propsFood_base_color.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Prefabs/Sword00_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Prefabs/Sword00_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Materials/Sword00_00.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Materials/Sword00_00.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Materials/Sword00_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Materials/Sword00_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Model/Sword00.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Model/Sword00.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Textures/Sword00_00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Textures/Sword00_00.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Textures/Sword00_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword00/Textures/Sword00_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Materials/Sword01_00.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Materials/Sword01_00.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Materials/Sword01_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Materials/Sword01_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Model/Sword01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Model/Sword01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Textures/Sword01_00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Textures/Sword01_00.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Textures/Sword01_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalModels/Sword/Kevin Iglesias/Low Poly Fantasy Swords/Source/Sword01/Textures/Sword01_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FruitPrefabs/Fruits401.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FruitPrefabs/Fruits401.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwordPrefabs/SwordObj.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwordPrefabs/SwordObj.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CustomizePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CustomizePanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fruit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fruit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwordTip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SwordTip.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Sword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FruitArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameobjectMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LevelProgress.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RectXformMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SwordTip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/InputManager.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CustomizePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReorderableList/ReorderableArray.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/FruitPrefabs/Boss101.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/mvpGame.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fruit.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Sword.cs" />
+        <option value="$PROJECT_DIR$/Assets/SwordTip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fruit.cs" />
+        <option value="$PROJECT_DIR$/Assets/FruitArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StepBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/AIBrain.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test/AIState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FruitArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/StepBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameobjectMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/CameraShake.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SwordTip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sword.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fruit.cs" />
+        <option value="$PROJECT_DIR$/Assets/CustomizePanel.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1VCe6rovBXaHjpuLnh6gRIyxrGH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +208,7 @@
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -66,6 +249,23 @@
       <updated>1576761331940</updated>
       <workItem from="1576761341913" duration="10998000" />
       <workItem from="1576774099562" duration="388000" />
+      <workItem from="1577122415522" duration="312000" />
+      <workItem from="1577197427290" duration="2598000" />
+      <workItem from="1577378189147" duration="208000" />
+      <workItem from="1577384369215" duration="1806000" />
+      <workItem from="1577554562636" duration="2446000" />
+      <workItem from="1577615524205" duration="6517000" />
+      <workItem from="1577648939375" duration="3576000" />
+      <workItem from="1577728149314" duration="3323000" />
+      <workItem from="1577802397640" duration="1590000" />
+      <workItem from="1577880744573" duration="11746000" />
+      <workItem from="1577954056405" duration="6334000" />
+      <workItem from="1578406266802" duration="843000" />
+      <workItem from="1578946379568" duration="2016000" />
+      <workItem from="1578993907046" duration="8341000" />
+      <workItem from="1579104105679" duration="722000" />
+      <workItem from="1579109093386" duration="2648000" />
+      <workItem from="1579170023594" duration="5023000" />
     </task>
     <servers />
   </component>
@@ -74,4 +274,33 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="627" y="252" width="666" height="536" key="find.popup" timestamp="1578946423980">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="252" width="666" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578946423980" />
+    <state x="501" y="189" key="run.anything.popup" timestamp="1577897636199">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1064" y="234" key="run.anything.popup/0.0.1920.1040/-1440.78.1440.860@-1440.78.1440.860" timestamp="1577631777186" />
+    <state x="501" y="189" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577897636199" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579117992936">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1577954824003" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579117992936" />
+  </component>
 </project>
