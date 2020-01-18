@@ -19,9 +19,10 @@ public class Fruit : MonoBehaviour
     public void PlayStabParticleEffect()
     {
         GameObject particleObj = Instantiate(stabparticleEffect, transform.position, Quaternion.identity);
-        //particleObj.transform.parent = transform;
-        //particleObj.transform.localScale = new Vector3(1f,1f,1f);
+        particleObj.transform.parent = transform;
+        particleObj.transform.localScale = new Vector3(1f,1f,1f);
         Destroy(particleObj,1f);
+        
     }
     
 }

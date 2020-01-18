@@ -510,6 +510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8746216464450013395, guid: 07efd46accbee2441a17d11c20b692ad,
+        type: 3}
+      propertyPath: BossLevelPanel
+      value: 
+      objectReference: {fileID: 8746216463017107860}
     - target: {fileID: 8746216464450013356, guid: 07efd46accbee2441a17d11c20b692ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -620,11 +625,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1971845217}
-    - target: {fileID: 8746216464450013395, guid: 07efd46accbee2441a17d11c20b692ad,
-        type: 3}
-      propertyPath: BossLevelPanel
-      value: 
-      objectReference: {fileID: 8746216463017107860}
     - target: {fileID: 8831110514851241316, guid: 07efd46accbee2441a17d11c20b692ad,
         type: 3}
       propertyPath: m_AnchorMax.y

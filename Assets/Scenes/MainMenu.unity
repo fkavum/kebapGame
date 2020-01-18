@@ -826,6 +826,7 @@ GameObject:
   - component: {fileID: 559796774}
   - component: {fileID: 559796773}
   - component: {fileID: 559796772}
+  - component: {fileID: 559796775}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -898,6 +899,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &559796775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559796771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f1df1fdcbdbaab42b43edca32d95c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 559796774}
+  shakeDuration: 0
+  shakeAmount: 0.7
+  decreaseFactor: 1
 --- !u!224 &563343709 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 283346010451688238, guid: d22837ff55925ef4a9dc0f21576f0e04,
@@ -937,7 +954,7 @@ MonoBehaviour:
   bestScore: 0
   gold: 0
   currentScore: 0
-  selectedSwordPrefab: {fileID: 3939764464010746168, guid: 28895824a604d25498ace12cc1455209,
+  selectedSwordPrefab: {fileID: 843292661485620097, guid: 4be8cedaafef48e41a832577c44e51bf,
     type: 3}
   currentLevel: 0
 --- !u!114 &573786548
@@ -961,7 +978,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 596891de7340fec45b788bcfb742febe, type: 3}
   - {fileID: 8300000, guid: 51aa946b0188c224eb0a0711aa52f4cd, type: 3}
   loseClips:
-  - {fileID: 8300000, guid: 36a1590c04d5cde4ca3d1fc2c079e783, type: 3}
+  - {fileID: 8300000, guid: 591e93bb3d17c584598653aabbf952a1, type: 3}
   bonusClips: []
   musicVolume: 0.5
   fxVolume: 1
@@ -1142,7 +1159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &919929934
 RectTransform:
   m_ObjectHideFlags: 0

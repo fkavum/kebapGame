@@ -14,7 +14,7 @@ public class InputManager : Singleton<InputManager>
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (touchAvaible)
+            if (touchAvaible && !LevelManager.Instance.IsGameOver)
             {
                 isTouchedForStab = true;
             } 

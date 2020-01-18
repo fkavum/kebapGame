@@ -26,6 +26,11 @@ public class LevelManager : Singleton<LevelManager>
     private int m_stepCount;
     private int m_currentStep;
 
+    public bool IsGameOver
+    {
+        get => m_isGameOver;
+        set => m_isGameOver = value;
+    }
 
     private int m_currentCollectedFruit;
     private int m_fruitToCollect;
@@ -40,6 +45,9 @@ public class LevelManager : Singleton<LevelManager>
         m_levelBehaviour = gameObject.GetComponent<LevelBehaviour>();
         m_stepCount = m_levelBehaviour.stepList.Count;
         StartCoroutine("ExecuteGameLoop");
+
+        Camera.main.gameObject.AddComponent<CameraShake>();
+        Camera.main.gameObject.GetComponent<CameraShake>().shakeAmount = 0.08f;
     }
 
     IEnumerator ExecuteGameLoop()
