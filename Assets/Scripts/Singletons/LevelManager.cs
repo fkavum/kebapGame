@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Infated.Tools;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
+//using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : Singleton<LevelManager>
@@ -89,7 +89,7 @@ public class LevelManager : Singleton<LevelManager>
 
     private void InitFruits(int step, bool isBossStep)
     {
-        m_fruitArea = m_levelBehaviour.InitFruit(step,isBossStep);
+        m_fruitArea = m_levelBehaviour.InitFruit(step, isBossStep);
         m_fruitToCollect = m_fruitArea.fruitCount;
         m_currentCollectedFruit = 0;
     }
@@ -105,8 +105,8 @@ public class LevelManager : Singleton<LevelManager>
     private void initTheStep()
     {
         bool isBossStep = false;
-        LevelCanvas.levelProgressBar.ChangeLevelProgressValue((float) m_currentStep / (float) m_stepCount, 1f);
-        
+        LevelCanvas.levelProgressBar.ChangeLevelProgressValue((float)m_currentStep / (float)m_stepCount, 1f);
+
         InputManager.Instance.touchAvaible = false;
         if (m_currentStep == m_stepCount)
         {
@@ -124,12 +124,12 @@ public class LevelManager : Singleton<LevelManager>
 
         if (m_sword != null)
         {
-            m_sword.gameObject.GetComponent<GameobjectMover>().MoveOff(false,true);
+            m_sword.gameObject.GetComponent<GameobjectMover>().MoveOff(false, true);
         }
 
         if (m_fruitArea != null)
         {
-            m_fruitArea.gameObject.GetComponent<GameobjectMover>().MoveOff(false,true);
+            m_fruitArea.gameObject.GetComponent<GameobjectMover>().MoveOff(false, true);
         }
 
         StartCoroutine(InitTheStepCoroutine(isBossStep));
@@ -144,13 +144,13 @@ public class LevelManager : Singleton<LevelManager>
             yield return new WaitForSeconds(1f);
             LevelCanvas.BossLevelPanel.MoveOff();
         }
-        
-        InitFruits(m_currentStep,isBossStep);
+
+        InitFruits(m_currentStep, isBossStep);
         InitSword();
         m_levelBehaviour.StartCoroutines(m_currentStep, m_sword, m_fruitArea);
         yield return null;
     }
-    
+
     // coroutine for game play
     IEnumerator PlayGameRoutine()
     {
@@ -180,9 +180,9 @@ public class LevelManager : Singleton<LevelManager>
         {
             yield return new WaitForSeconds(0.5f);
             GameManager.Instance.UpdateBestScore();
-            SceneManager.LoadScene("MainMenu");  
+            SceneManager.LoadScene("MainMenu");
         }
-    
+
     }
 
 
@@ -212,7 +212,7 @@ public class LevelManager : Singleton<LevelManager>
         //TODO: Score manager needed.
         GameManager.Instance.currentScore++;
         LevelCanvas.curentScoreText.text = GameManager.Instance.currentScore.ToString();
-        
+
         if (m_fruitToCollect <= m_currentCollectedFruit)
         {
             m_currentStep += 1;
@@ -220,7 +220,7 @@ public class LevelManager : Singleton<LevelManager>
             initTheStep();
         }
     }
-    
-    
-  
+
+
+
 }

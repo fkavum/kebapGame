@@ -2,17 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
+//using UnityEngine.Experimental.PlayerLoop;
 
 public class Sword : MonoBehaviour
 {
-    
+
     [Header("Sword Prefabs")]
     public GameObject swordObject;
     public GameObject swordTip;
     public GameObject swordEnd;
     public GameObject swordFailPrefab;
-    
+
     [Header("Rotation Parameters")]
     public bool m_rotate = true;
     public float rotateSpeed = 10f;
@@ -26,7 +26,7 @@ public class Sword : MonoBehaviour
     public GameObject[] mealPoints;
     private int mealFound = 0;
     public float stabMealTime = 1f;
-    
+
     private Rigidbody2D _rigidbody;
     private void Start()
     {
@@ -39,11 +39,11 @@ public class Sword : MonoBehaviour
         mealPoints = new GameObject[mealCount];
         Vector3 firstPoint = swordEnd.transform.position;
         Vector3 lastPoint = swordTip.transform.position;
-        
+
         for (int i = 0; i < mealCount; i++)
         {
-            Vector3 thePoint = firstPoint + i * ((lastPoint-firstPoint)/(mealCount-1));
-            
+            Vector3 thePoint = firstPoint + i * ((lastPoint - firstPoint) / (mealCount - 1));
+
             GameObject pointObj = new GameObject();
             pointObj.name = (i + 1).ToString() + ".Point";
             pointObj.transform.position = thePoint;
@@ -75,12 +75,12 @@ public class Sword : MonoBehaviour
         }
 
     }
-    
+
     private bool FindCollectibles()
     {
-        Debug.DrawRay(transform.position,transform.right*10f,Color.green);
+        Debug.DrawRay(transform.position, transform.right * 10f, Color.green);
         RaycastHit hit;
-        if (Physics.Raycast(transform.position,  transform.up,out hit,12f,1<<LayerMask.NameToLayer("RayCast")))
+        if (Physics.Raycast(transform.position, transform.up, out hit, 12f, 1 << LayerMask.NameToLayer("RayCast")))
         {
             MoveObject(hit);
             return true;
@@ -99,7 +99,7 @@ public class Sword : MonoBehaviour
         StartCoroutine(MoveOrigin(obj));
 
     }
-    
+
     IEnumerator MoveOrigin(GameObject obj)
     {
         float eclapsedTime = 0f;
@@ -126,8 +126,10 @@ public class Sword : MonoBehaviour
     IEnumerator AnimateSwordCoroutine(bool withFail = false)
     {
         InputManager.Instance.touchAvaible = false;
-        if(withFail){
-        swordFailPrefab.SetActive(true);}
+        if (withFail)
+        {
+            swordFailPrefab.SetActive(true);
+        }
         Vector3 startPosition = swordObject.transform.localPosition;
         Vector3 stabPosition = new Vector3(swordObject.transform.localPosition.x,
             swordObject.transform.localPosition.y + stabSize, swordObject.transform.localPosition.z);
@@ -138,7 +140,7 @@ public class Sword : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float t = Mathf.Clamp(elapsedTime / stabInTime, 0f, 1f);
-            t =  t*t*t*(t*(t*6 - 15) + 10);
+            t = t * t * t * (t * (t * 6 - 15) + 10);
             swordObject.transform.localPosition = Vector3.Lerp(startPosition, stabPosition, t);
             yield return null;
         }
@@ -148,7 +150,7 @@ public class Sword : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float t = Mathf.Clamp(elapsedTime / stabInTime, 0f, 1f);
-            t =  t*t*t*(t*(t*6 - 15) + 10);
+            t = t * t * t * (t * (t * 6 - 15) + 10);
             swordObject.transform.localPosition = Vector3.Lerp(stabPosition, startPosition, t);
             yield return null;
         }
