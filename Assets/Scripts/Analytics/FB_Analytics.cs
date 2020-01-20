@@ -27,18 +27,6 @@ public class FB_Analytics : MonoBehaviour
     }
     #endregion
 
-    #region Events
-    public static void LevelAchieved(int toLevel)
-    {
-        Dictionary<string, object> Params = new Dictionary<string, object>
-        {
-            { "to", toLevel }
-        };
-
-        FB.LogAppEvent(AppEventName.AchievedLevel, null, Params);
-    }
-    #endregion
-
     #region Callbacks
     private void InitCallback()
     {
