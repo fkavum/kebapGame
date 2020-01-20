@@ -5,7 +5,18 @@ using UnityEngine.UI;
 
 public class LevelCanvas : MonoBehaviour
 {
-    public LevelProgress levelProgressBar;
+    private LevelProgress _levelProgressBar;
+    public LevelProgress LevelProgressBar
+    {
+        get
+        {
+            if (!_levelProgressBar)
+                _levelProgressBar = FindObjectOfType<LevelProgress>();
+
+            return _levelProgressBar;
+        }
+    }
+
     public Text curentScoreText;
     public Text currentGoldText;
     public Text currentLevelText;

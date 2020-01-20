@@ -105,7 +105,7 @@ public class LevelManager : Singleton<LevelManager>
     private void initTheStep()
     {
         bool isBossStep = false;
-        LevelCanvas.levelProgressBar.ChangeLevelProgressValue((float)m_currentStep / (float)m_stepCount, 1f);
+        LevelCanvas.LevelProgressBar.ChangeLevelProgressValue((float)m_currentStep / (float)m_stepCount, 1f);
 
         InputManager.Instance.touchAvaible = false;
         if (m_currentStep == m_stepCount)
