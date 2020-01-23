@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20f0e1a9cefa8048a6c61aa8fabd8ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelCanvas: {fileID: 1794746688}
+  levelCanvas: {fileID: 1794746688}
   initialHealth: 3
 --- !u!114 &730454435
 MonoBehaviour:
@@ -507,11 +507,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8746216464450013395, guid: 07efd46accbee2441a17d11c20b692ad,
-        type: 3}
-      propertyPath: BossLevelPanel
-      value: 
-      objectReference: {fileID: 8746216463017107860}
     - target: {fileID: 8746216464450013356, guid: 07efd46accbee2441a17d11c20b692ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -622,16 +617,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1971845217}
-    - target: {fileID: 8831110514851241316, guid: 07efd46accbee2441a17d11c20b692ad,
+    - target: {fileID: 8746216464450013395, guid: 07efd46accbee2441a17d11c20b692ad,
         type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746216463667007055, guid: 07efd46accbee2441a17d11c20b692ad,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: BossLevelPanel
+      value: 
+      objectReference: {fileID: 8746216463017107860}
     - target: {fileID: 8746216463667007054, guid: 07efd46accbee2441a17d11c20b692ad,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -646,6 +636,21 @@ PrefabInstance:
         type: 3}
       propertyPath: endPosition.y
       value: -2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746216463667007055, guid: 07efd46accbee2441a17d11c20b692ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883190964406312381, guid: 07efd46accbee2441a17d11c20b692ad,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831110514851241316, guid: 07efd46accbee2441a17d11c20b692ad,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07efd46accbee2441a17d11c20b692ad, type: 3}

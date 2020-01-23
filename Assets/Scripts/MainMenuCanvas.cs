@@ -20,6 +20,7 @@ public class MainMenuCanvas : MonoBehaviour
     
     private void Start()
     {
+        customizePanel.SetActive(true);
         bestScoreText.text = "Best: " + GameManager.Instance.bestScore.ToString();
         currentGoldText.text = GameManager.Instance.gold.ToString();
         currentLevelText.text = "Level " + GameManager.Instance.currentLevel.ToString();
@@ -38,6 +39,9 @@ public class MainMenuCanvas : MonoBehaviour
                 NoSoundButton();
             }
         }
+        
+        customizePanel.GetComponent<CustomizePanel>().UnSelectAllButtons();
+        customizePanel.SetActive(false);
         
     }
 

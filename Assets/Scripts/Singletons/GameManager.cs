@@ -47,7 +47,7 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
-            gold = 15;
+            gold = 999;
         }
     }
 
@@ -61,6 +61,12 @@ public class GameManager : Singleton<GameManager>
     public void AddGold(int goldValue)
     {
         gold += goldValue;
+        PlayerPrefs.SetInt("Gold",gold);        
+    }
+    
+    public void SellGold(int goldValue)
+    {
+        gold -= goldValue;
         PlayerPrefs.SetInt("Gold",gold);        
     }
 

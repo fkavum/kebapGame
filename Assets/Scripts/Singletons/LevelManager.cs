@@ -15,7 +15,7 @@ public class LevelManager : Singleton<LevelManager>
     private bool m_isLose = false;
 
     [Header("Should fill in the inspector")]
-    public LevelCanvas LevelCanvas;
+    public LevelCanvas levelCanvas;
 
     public int initialHealth;
 
@@ -34,6 +34,20 @@ public class LevelManager : Singleton<LevelManager>
 
     private int m_currentCollectedFruit;
     private int m_fruitToCollect;
+    
+    
+    private BackgroundColorChanger m_backgroundColorChanger;
+    public BackgroundColorChanger backgroundColorChanger
+    {
+        get
+        {
+            if (!m_backgroundColorChanger)
+                m_backgroundColorChanger = FindObjectOfType<BackgroundColorChanger>();
+
+            return m_backgroundColorChanger;
+        }
+    }
+    
 
     public override void Awake()
     {
@@ -71,7 +85,7 @@ public class LevelManager : Singleton<LevelManager>
     void InitLevel()
     {
         m_currentHealth = initialHealth;
-        LevelCanvas.UpdateHealth(m_currentHealth);
+        levelCanvas.UpdateHealth(m_currentHealth);
         m_currentStep = 0;
         initTheStep();
         InitUIElements();
@@ -81,9 +95,9 @@ public class LevelManager : Singleton<LevelManager>
 
     private void InitUIElements()
     {
-        LevelCanvas.curentScoreText.text = GameManager.Instance.currentScore.ToString();
-        LevelCanvas.currentGoldText.text = GameManager.Instance.gold.ToString();
-        LevelCanvas.currentLevelText.text = "Level " + GameManager.Instance.currentLevel.ToString();
+        levelCanvas.curentScoreText.text = GameManager.Instance.currentScore.ToString();
+        levelCanvas.currentGoldText.text = GameManager.Instance.gold.ToString();
+        levelCanvas.currentLevelText.text = "Level " + GameManager.Instance.currentLevel.ToString();
     }
 
 
@@ -105,7 +119,7 @@ public class LevelManager : Singleton<LevelManager>
     private void initTheStep()
     {
         bool isBossStep = false;
-        LevelCanvas.LevelProgressBar.ChangeLevelProgressValue((float)m_currentStep / (float)m_stepCount, 1f);
+        levelCanvas.LevelProgressBar.ChangeLevelProgressValue((float)m_currentStep / (float)m_stepCount, 1f);
 
         InputManager.Instance.touchAvaible = false;
         if (m_currentStep == m_stepCount)
@@ -139,10 +153,13 @@ public class LevelManager : Singleton<LevelManager>
     {
         if (isBossStep)
         {
-            LevelCanvas.BossLevelPanel.gameObject.SetActive(true);
-            LevelCanvas.BossLevelPanel.MoveOn();
+            levelCanvas.BossLevelPanel.gameObject.SetActive(true);
+            backgroundColorChanger.changeToBossColor();
+            backgroundColorChanger.uiGradient.enabled = false;
+            backgroundColorChanger.uiGradient.enabled = true;
+            levelCanvas.BossLevelPanel.MoveOn();
             yield return new WaitForSeconds(1f);
-            LevelCanvas.BossLevelPanel.MoveOff();
+            levelCanvas.BossLevelPanel.MoveOff();
         }
 
         InitFruits(m_currentStep, isBossStep);
@@ -167,7 +184,8 @@ public class LevelManager : Singleton<LevelManager>
 
         if (m_isWinner)
         {
-            StartCoroutine(GoNextLevel());
+            yield return new WaitForSeconds(0.5f);
+            levelCanvas.winPanel.SetActive(true);
         }
 
         // wait until read to reload
@@ -180,7 +198,7 @@ public class LevelManager : Singleton<LevelManager>
         {
             yield return new WaitForSeconds(0.5f);
             GameManager.Instance.UpdateBestScore();
-            SceneManager.LoadScene("MainMenu");
+            levelCanvas.losePanel.SetActive(true);
         }
 
     }
@@ -188,7 +206,6 @@ public class LevelManager : Singleton<LevelManager>
 
     IEnumerator GoNextLevel()
     {
-
         yield return new WaitForSeconds(1f);
         GameManager.Instance.GoNextLevel();
         yield return null;
@@ -197,7 +214,7 @@ public class LevelManager : Singleton<LevelManager>
     public void decreaseHealth()
     {
         m_currentHealth -= 1;
-        LevelCanvas.UpdateHealth(m_currentHealth);
+        levelCanvas.UpdateHealth(m_currentHealth);
 
         if (m_currentHealth <= 0)
         {
@@ -211,7 +228,7 @@ public class LevelManager : Singleton<LevelManager>
 
         //TODO: Score manager needed.
         GameManager.Instance.currentScore++;
-        LevelCanvas.curentScoreText.text = GameManager.Instance.currentScore.ToString();
+        levelCanvas.curentScoreText.text = GameManager.Instance.currentScore.ToString();
 
         if (m_fruitToCollect <= m_currentCollectedFruit)
         {
