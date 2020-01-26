@@ -55,7 +55,7 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
-            gold = 999;
+            gold = 370;
         }
         if (PlayerPrefs.HasKey("BestLevel"))
         {
@@ -81,6 +81,13 @@ public class GameManager : Singleton<GameManager>
     {
         currentLevel++;
         PlayerPrefs.SetInt("Level",currentLevel);
+
+        if (currentLevel > bestLevel)
+        {
+            PlayerPrefs.SetInt("BestLevel",currentLevel);
+            bestLevel = currentLevel;
+        }
+        
         SceneManager.LoadScene("Level"+GameManager.Instance.currentLevel.ToString());
     }
 

@@ -188,6 +188,7 @@
           <e p="Sword.cs" t="Include" />
           <e p="SwordTip.cs" t="Include" />
         </e>
+        <e p="SelectLevelButton.cs" t="Include" />
         <e p="SelectStickButton.cs" t="Include" />
         <e p="set.cs" t="Include" />
         <e p="Third-party" t="Include">

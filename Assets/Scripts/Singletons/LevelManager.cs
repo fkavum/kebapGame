@@ -165,7 +165,10 @@ public class LevelManager : Singleton<LevelManager>
         InitFruits(m_currentStep, isBossStep);
         InitSword();
         m_levelBehaviour.StartCoroutines(m_currentStep, m_sword, m_fruitArea);
-        yield return null;
+        InputManager.Instance.touchAvaible = false;
+        // it is equal to moveOn time.
+        yield return new WaitForSeconds(1f);
+        InputManager.Instance.touchAvaible = true;
     }
 
     // coroutine for game play

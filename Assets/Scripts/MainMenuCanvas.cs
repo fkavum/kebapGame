@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class MainMenuCanvas : MonoBehaviour
 {
     public GameObject customizePanel;
+    public GameObject levelsPanel;
     
     public Text bestScoreText;
     public Text currentGoldText;
@@ -102,6 +103,16 @@ public class MainMenuCanvas : MonoBehaviour
       customizePanel.SetActive(false);
       Destroy(m_mainMenuSword);
       m_mainMenuSword = Instantiate(GameManager.Instance.selectedSwordPrefab, new Vector3(0,1f,0), Quaternion.identity);
+  }
+  
+  public void OpenLevelsPanel()
+  {
+      levelsPanel.SetActive(true);
+  }
+  
+  public void CloseLevelsPanel()
+  {
+      levelsPanel.SetActive(false);
   }
 
   public void ReverseTime()
