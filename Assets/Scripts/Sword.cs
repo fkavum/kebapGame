@@ -63,6 +63,10 @@ public class Sword : MonoBehaviour
                 LevelManager.Instance.decreaseHealth();
                 SoundManager.Instance.PlayLoseSound();
                 Camera.main.GetComponent<CameraShake>().shakeDuration = stabTime;
+                if (GameManager.Instance.vibrateOn)
+                {
+                    Taptic.Vibrate();
+                }
 
             }
             else

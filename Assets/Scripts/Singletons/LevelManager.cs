@@ -56,6 +56,7 @@ public class LevelManager : Singleton<LevelManager>
 
     void Start()
     {
+        Taptic.tapticOn = true;
         m_levelBehaviour = gameObject.GetComponent<LevelBehaviour>();
         m_stepCount = m_levelBehaviour.stepList.Count;
         StartCoroutine("ExecuteGameLoop");
@@ -126,8 +127,7 @@ public class LevelManager : Singleton<LevelManager>
         {
             m_isGameOver = true;
             m_isWinner = true;
-            //Todo: Score manager needed.
-            GameManager.Instance.AddGold(5);
+            GameManager.Instance.AddGold(GameManager.Instance.levelCompleteGold);
             return;
         }
 
@@ -233,7 +233,6 @@ public class LevelManager : Singleton<LevelManager>
         if (m_fruitToCollect <= m_currentCollectedFruit)
         {
             m_currentStep += 1;
-
             initTheStep();
         }
     }

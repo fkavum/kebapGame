@@ -10,12 +10,17 @@ public class GameManager : Singleton<GameManager>
 {
 
     public int bestScore;
+    public int bestLevel;
     public int gold;
     public int currentScore;
     public GameObject selectedSwordPrefab;
     public int currentLevel;
-    public int buySwordPrice;
     
+    
+    public int buySwordPrice;
+    public int levelCompleteGold;
+
+    public bool vibrateOn;
     public override void Awake()
     {
         base.Awake();
@@ -40,6 +45,8 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
+            PlayerPrefs.SetInt("Level",1);
+            PlayerPrefs.SetInt("BestLevel",1);
             currentLevel = 1;
         }
         if (PlayerPrefs.HasKey("Gold"))
@@ -50,12 +57,24 @@ public class GameManager : Singleton<GameManager>
         {
             gold = 999;
         }
+        if (PlayerPrefs.HasKey("BestLevel"))
+        {
+            bestLevel = PlayerPrefs.GetInt("BestLevel");
+        }
+        else
+        {
+            bestLevel = currentLevel;
+        }
         if (!PlayerPrefs.HasKey(selectedSwordPrefab.gameObject.name))
         {
             PlayerPrefs.SetInt(selectedSwordPrefab.gameObject.name,1);
         }
 
         buySwordPrice = 100;
+        // when you change this. Change also win panel.
+        levelCompleteGold = 10;
+
+        vibrateOn = true;
     }
 
     public void GoNextLevel()

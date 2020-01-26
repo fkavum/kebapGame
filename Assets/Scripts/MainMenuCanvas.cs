@@ -20,6 +20,9 @@ public class MainMenuCanvas : MonoBehaviour
 
     public GameObject soundOnButton;
     public GameObject soundOffButton;
+
+    public GameObject vibrateOnButton;
+    public GameObject vibrateOffButton;
     
     private void Start()
     {
@@ -45,9 +48,37 @@ public class MainMenuCanvas : MonoBehaviour
             }
         }
         
+        if (PlayerPrefs.HasKey("VibrateOn"))
+        {
+            if (PlayerPrefs.GetInt("VibrateOn") == 1)
+            {
+                YesVibrateButton();
+            }
+            else
+            {
+                NoVibrateButton();
+            }
+        }
+        
         customizePanel.GetComponent<CustomizePanel>().UnSelectAllButtons();
         customizePanel.SetActive(false);
         
+    }
+
+    public void NoVibrateButton()
+    {
+        GameManager.Instance.vibrateOn = false;
+        vibrateOnButton.SetActive(true);
+        vibrateOffButton.SetActive(false);
+        PlayerPrefs.SetInt("VibrateOn",0);
+    }
+
+    public void YesVibrateButton()
+    {
+        GameManager.Instance.vibrateOn = true;
+        vibrateOnButton.SetActive(false);
+        vibrateOffButton.SetActive(true);
+        PlayerPrefs.SetInt("VibrateOn",1);
     }
 
     private void InitMainMenuSword()
