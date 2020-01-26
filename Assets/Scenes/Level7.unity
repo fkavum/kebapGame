@@ -216,10 +216,13 @@ MonoBehaviour:
       stepActionForFruit:
         array:
         - stepTime: 1
-          isClockWise: 0
+          isClockWise: 1
           rotationSpeed: 20
         - stepTime: 2
           isClockWise: 0
+          rotationSpeed: 80
+        - stepTime: 2
+          isClockWise: 1
           rotationSpeed: 80
       stepActionForSword:
         array:
@@ -227,18 +230,21 @@ MonoBehaviour:
           isClockWise: 1
           rotationSpeed: 40
         - stepTime: 5
-          isClockWise: 0
-          rotationSpeed: 10
+          isClockWise: 1
+          rotationSpeed: 40
     - StepName: 
       stepActionForFruit:
         array:
-        - stepTime: 10
+        - stepTime: 1
+          isClockWise: 1
+          rotationSpeed: 50
+        - stepTime: 2
           isClockWise: 1
           rotationSpeed: 10
       stepActionForSword:
         array:
         - stepTime: 10
-          isClockWise: 1
+          isClockWise: 0
           rotationSpeed: 50
     - StepName: 
       stepActionForFruit:

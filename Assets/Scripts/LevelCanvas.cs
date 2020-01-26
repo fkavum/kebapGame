@@ -24,7 +24,7 @@ public class LevelCanvas : MonoBehaviour
     public Text currentGoldText;
     public Text currentLevelText;
     public GameObject[] healthObjs;
-    public RectXformMover BossLevelPanel;
+    public GameObject BossLevelPanel;
     public GameObject winPanel;
     public GameObject losePanel;
     public GameObject bossPanel;

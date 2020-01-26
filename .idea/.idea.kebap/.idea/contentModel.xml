@@ -64,6 +64,7 @@
             </e>
           </e>
         </e>
+        <e p="FadeController.cs" t="Include" />
         <e p="GameAnalytics" t="Include">
           <e p="Editor" t="Include">
             <e p="GA_AssetPostprocessor.cs" t="Include" />

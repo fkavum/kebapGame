@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 8440154754383450543, guid: d22837ff55925ef4a9dc0f21576f0e04,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 283346010451688238, guid: d22837ff55925ef4a9dc0f21576f0e04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -237,15 +242,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 283346010224234870, guid: d22837ff55925ef4a9dc0f21576f0e04,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 283346008420369082, guid: d22837ff55925ef4a9dc0f21576f0e04,
         type: 3}
       propertyPath: m_Name
       value: Health
+      objectReference: {fileID: 0}
+    - target: {fileID: 283346010224234870, guid: d22837ff55925ef4a9dc0f21576f0e04,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d22837ff55925ef4a9dc0f21576f0e04, type: 3}
@@ -288,30 +293,6 @@ MonoBehaviour:
 --- !u!114 &684895623 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 283346009536971579, guid: d22837ff55925ef4a9dc0f21576f0e04,
-    type: 3}
-  m_PrefabInstance: {fileID: 684895617}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &684895624 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 283346009649422702, guid: d22837ff55925ef4a9dc0f21576f0e04,
-    type: 3}
-  m_PrefabInstance: {fileID: 684895617}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &684895625 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 283346009255056345, guid: d22837ff55925ef4a9dc0f21576f0e04,
     type: 3}
   m_PrefabInstance: {fileID: 684895617}
   m_PrefabAsset: {fileID: 0}
@@ -366,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20f0e1a9cefa8048a6c61aa8fabd8ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelCanvas: {fileID: 1794746688}
+  levelCanvas: {fileID: 0}
   initialHealth: 3
 --- !u!114 &730454435
 MonoBehaviour:
@@ -647,14 +628,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf20119ea4179d4a80e2e94307ce1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelProgressSlider: {fileID: 684895624}
   curentScoreText: {fileID: 684895623}
   currentGoldText: {fileID: 684895622}
-  currentLevelText: {fileID: 684895625}
+  currentLevelText: {fileID: 0}
   healthObjs:
   - {fileID: 684895621}
   - {fileID: 684895620}
   - {fileID: 684895619}
+  BossLevelPanel: {fileID: 0}
+  winPanel: {fileID: 0}
+  losePanel: {fileID: 0}
+  bossPanel: {fileID: 0}
 --- !u!1 &1971845215
 GameObject:
   m_ObjectHideFlags: 0

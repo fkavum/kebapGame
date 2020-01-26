@@ -153,13 +153,13 @@ public class LevelManager : Singleton<LevelManager>
     {
         if (isBossStep)
         {
-            levelCanvas.BossLevelPanel.gameObject.SetActive(true);
             backgroundColorChanger.changeToBossColor();
             backgroundColorChanger.uiGradient.enabled = false;
             backgroundColorChanger.uiGradient.enabled = true;
-            levelCanvas.BossLevelPanel.MoveOn();
+            
+            levelCanvas.BossLevelPanel.gameObject.SetActive(true);
             yield return new WaitForSeconds(1f);
-            levelCanvas.BossLevelPanel.MoveOff();
+            levelCanvas.BossLevelPanel.gameObject.SetActive(false);
         }
 
         InitFruits(m_currentStep, isBossStep);
