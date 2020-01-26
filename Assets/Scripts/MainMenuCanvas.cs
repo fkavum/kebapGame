@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameAnalyticsSDK.Setup;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class MainMenuCanvas : MonoBehaviour
     public Text bestScoreText;
     public Text currentGoldText;
     public Text currentLevelText;
+    public Text currentGoldTextCustomize;
+    public Text buySwordPriceText;
 
     private GameObject m_mainMenuSword;
 
@@ -23,6 +26,8 @@ public class MainMenuCanvas : MonoBehaviour
         customizePanel.SetActive(true);
         bestScoreText.text = "Best: " + GameManager.Instance.bestScore.ToString();
         currentGoldText.text = GameManager.Instance.gold.ToString();
+        currentGoldTextCustomize.text = GameManager.Instance.gold.ToString();
+        buySwordPriceText.text = GameManager.Instance.buySwordPrice.ToString();
         currentLevelText.text = "Level " + GameManager.Instance.currentLevel.ToString();
         
         InitMainMenuSword();
@@ -86,6 +91,17 @@ public class MainMenuCanvas : MonoBehaviour
       soundOnButton.SetActive(false);
       soundOffButton.SetActive(true);
       PlayerPrefs.SetInt("MusicOn",1);
+  }
+
+  public void BuySwordButton()
+  {
+      if (GameManager.Instance.gold >= GameManager.Instance.buySwordPrice)
+      {
+          customizePanel.GetComponent<CustomizePanel>().UnlockRandom();
+          GameManager.Instance.SellGold(GameManager.Instance.buySwordPrice);
+          currentGoldText.text = GameManager.Instance.gold.ToString();
+          currentGoldTextCustomize.text = GameManager.Instance.gold.ToString();
+      }
   }
   
 }

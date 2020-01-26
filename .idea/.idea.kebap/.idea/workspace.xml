@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="691ca0d2-9e9a-4cdb-9cd1-ff890627cf6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kebap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level6.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/mvpGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mvpGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomizePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CustomizePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,14 +70,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Fruit.cs" />
         <option value="$PROJECT_DIR$/Assets/backgroundColorChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/BackgroundColorChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/SelectStickButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/CustomizePanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelBehaviour/LevelBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/FadeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singletons/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/CustomizePanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuCanvas.cs" />
       </list>
     </option>
   </component>
@@ -169,7 +154,7 @@
       <workItem from="1579707425086" duration="5495000" />
       <workItem from="1579779890104" duration="594000" />
       <workItem from="1579794938842" duration="1642000" />
-      <workItem from="1579975775798" duration="2020000" />
+      <workItem from="1579975775798" duration="3067000" />
     </task>
     <servers />
   </component>

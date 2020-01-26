@@ -14,6 +14,7 @@ public class GameManager : Singleton<GameManager>
     public int currentScore;
     public GameObject selectedSwordPrefab;
     public int currentLevel;
+    public int buySwordPrice;
     
     public override void Awake()
     {
@@ -49,6 +50,12 @@ public class GameManager : Singleton<GameManager>
         {
             gold = 999;
         }
+        if (!PlayerPrefs.HasKey(selectedSwordPrefab.gameObject.name))
+        {
+            PlayerPrefs.SetInt(selectedSwordPrefab.gameObject.name,1);
+        }
+
+        buySwordPrice = 100;
     }
 
     public void GoNextLevel()

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CustomizePanel : MonoBehaviour
 {
     public SelectStickButton[] selectStickButtonList;
+    
     public void UnSelectAllButtons()
     {
         foreach (SelectStickButton selectStickButton in selectStickButtonList)
