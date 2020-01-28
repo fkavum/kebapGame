@@ -19,6 +19,7 @@ public class MainMenuCanvas : MonoBehaviour
 
     private GameObject m_mainMenuSword;
 
+    public GameObject settingButtons;
     public GameObject soundOnButton;
     public GameObject soundOffButton;
 
@@ -64,6 +65,11 @@ public class MainMenuCanvas : MonoBehaviour
         customizePanel.GetComponent<CustomizePanel>().UnSelectAllButtons();
         customizePanel.SetActive(false);
         
+    }
+
+    public void ChangeSettingButtonStatus()
+    {
+        settingButtons.SetActive(!settingButtons.active);
     }
 
     public void NoVibrateButton()

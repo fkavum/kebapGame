@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87655aa6140f4c64c8396427e8966439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stabparticleEffect: {fileID: 5546452084512746513, guid: 6d0122434cb5c814ebfad654c266ff3d,
+  stabparticleEffect: {fileID: 5546452084512746513, guid: 3233dbf9b2cf45348a9cce33214d735f,
     type: 3}
 --- !u!1001 &5108735264449614056
 PrefabInstance:
@@ -92,12 +92,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 276e1fd13b8e468498f7bb62e78f1275,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.216
+      value: -0.158
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 276e1fd13b8e468498f7bb62e78f1275,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.305
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 276e1fd13b8e468498f7bb62e78f1275,
         type: 3}
@@ -147,17 +147,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 276e1fd13b8e468498f7bb62e78f1275,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9325562
+      value: 0.6618043
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 276e1fd13b8e468498f7bb62e78f1275,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.0916605
+      value: 2.9037163
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 276e1fd13b8e468498f7bb62e78f1275,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9325564
+      value: 0.66180444
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 276e1fd13b8e468498f7bb62e78f1275, type: 3}

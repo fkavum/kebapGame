@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87655aa6140f4c64c8396427e8966439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stabparticleEffect: {fileID: 5546452084512746513, guid: 6d0122434cb5c814ebfad654c266ff3d,
+  stabparticleEffect: {fileID: 5546452084512746513, guid: 1e80b96191a647f429013a389b5ec00a,
     type: 3}
 --- !u!1001 &6284319152676432885
 PrefabInstance:

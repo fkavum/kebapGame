@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Facebook.Unity;
+using GameAnalyticsSDK.Setup;
 using Infated.Tools;
 using UnityEngine;
 //using UnityEngine.Experimental.PlayerLoop;
@@ -165,10 +167,7 @@ public class LevelManager : Singleton<LevelManager>
         InitFruits(m_currentStep, isBossStep);
         InitSword();
         m_levelBehaviour.StartCoroutines(m_currentStep, m_sword, m_fruitArea);
-        InputManager.Instance.touchAvaible = false;
-        // it is equal to moveOn time.
-        yield return new WaitForSeconds(1f);
-        InputManager.Instance.touchAvaible = true;
+        
     }
 
     // coroutine for game play
@@ -202,8 +201,30 @@ public class LevelManager : Singleton<LevelManager>
             yield return new WaitForSeconds(0.5f);
             GameManager.Instance.UpdateBestScore();
             levelCanvas.losePanel.SetActive(true);
+            LogLevelFailEvent(GameManager.Instance.currentScore,2f);
+            LogLevelFail2Event(GameManager.Instance.currentScore,2f);
         }
 
+    }
+    
+    public void LogLevelFailEvent (int score, double valToSum) {
+        var parameters = new Dictionary<string, object>();
+        parameters["score"] = score;
+        FB.LogAppEvent(
+            "Level fail",
+            null,
+            parameters
+        );
+    }
+    
+    public void LogLevelFail2Event (int score, double valToSum) {
+        var parameters = new Dictionary<string, object>();
+        parameters["score"] = score;
+        FB.LogAppEvent(
+            "Level fail 2",
+            (float)valToSum,
+            parameters
+        );
     }
 
 
@@ -237,6 +258,7 @@ public class LevelManager : Singleton<LevelManager>
         {
             m_currentStep += 1;
             initTheStep();
+            InputManager.Instance.touchAvaible = false;
         }
     }
 

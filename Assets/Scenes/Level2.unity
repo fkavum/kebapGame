@@ -226,9 +226,6 @@ MonoBehaviour:
         - stepTime: 3
           isClockWise: 0
           rotationSpeed: 40
-        - stepTime: 5
-          isClockWise: 1
-          rotationSpeed: 40
     - StepName: 
       stepActionForFruit:
         array:

@@ -64,7 +64,7 @@ public class GameobjectMover : MonoBehaviour
 		
 			transform.position = Vector3.Lerp (startPos, endPos, t);
               
-
+			InputManager.Instance.touchAvaible = false;
             // wait one frame
 			yield return null;
 
@@ -73,6 +73,7 @@ public class GameobjectMover : MonoBehaviour
 		if (cutInput)
 		{
 			InputManager.Instance.touchAvaible = true;
+			
 		}
         // we are no longer moving
 		m_isMoving = false;

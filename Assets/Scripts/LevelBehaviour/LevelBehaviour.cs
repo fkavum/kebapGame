@@ -31,7 +31,7 @@ namespace Infated.Tools
             if(!isBossStep){
             int randomInt = Random.Range(0, levelFruitPrefabs.Length);
             GameObject fruitObj = Instantiate(levelFruitPrefabs[randomInt], Vector3.zero, Quaternion.identity);
-            fruitObj.GetComponent<GameobjectMover>().MoveOn();
+            fruitObj.GetComponent<GameobjectMover>().MoveOn(true);
             return fruitObj.GetComponent<FruitArea>();
             
             }
@@ -39,7 +39,7 @@ namespace Infated.Tools
             {
                 int randomInt = Random.Range(0, bossFruitPrefabs.Length);
                 GameObject fruitObj = Instantiate(bossFruitPrefabs[randomInt], Vector3.zero, Quaternion.identity);
-                fruitObj.GetComponent<GameobjectMover>().MoveOn();
+                fruitObj.GetComponent<GameobjectMover>().MoveOn(true);
                 return fruitObj.GetComponent<FruitArea>();
             }
         }
